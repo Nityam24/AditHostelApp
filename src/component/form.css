@@ -26,6 +26,15 @@
     
    }
 
+   .main select{
+    color: #ccced3;
+   }
+
+   .main option{
+    background-color: #ccced3;
+    color: #27282D;
+   }
+
    .main .radiobutton{
     display: flex;
     gap: .2rem;
@@ -46,7 +55,10 @@
    }
 
    .main input:focus{
-    border:1px solid #ccced3;
+    /* border:1px solid #ccced3; */
+    border: none;
+    outline: #ccced3;
+    outline-style: solid ;
 
    }
 
@@ -64,7 +76,7 @@
     margin-top: 1rem;
     background-color: #007bff;
     align-items: center;
-    color: #fff;
+    color:#ccced3;
     width: 25%;
     padding: .5rem;
     border: none;
@@ -73,5 +85,25 @@
     cursor: pointer;
   }
    
-
+  /* button {
+    background: #4051d0;
+    border: none;
+    border-radius: 5px;
+    color: #ccced3;
+    font-size: 16px;
+    padding: 16px 36px;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 20px;
+    margin-bottom: -30px;
+    box-shadow: 0px 4px 15px -5px rgba(0, 0, 0, 0.65);
+    transition: all .3s;
+    width: fit-content;
+    height: auto;
+  } */
+  
+  button:hover {
+    background: #3f4048;
+    box-shadow: 0px 5px 20px -3px rgba(0, 0, 0, 0.65);
+  }
    
