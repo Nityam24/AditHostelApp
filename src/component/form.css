@@ -31,6 +31,10 @@
     gap: .2rem;
    }
 
+   .radiobutton label{
+    font-weight:400;
+   }
+
    .main input{
     width: 100%;
     align-self: center;
@@ -39,6 +43,11 @@
     border-radius: 5px;
     padding: .5rem;
     color: #ccced3;
+   }
+
+   .main input:focus{
+    border:1px solid #ccced3;
+
    }
 
    .main select{
@@ -56,7 +65,7 @@
     background-color: #007bff;
     align-items: center;
     color: #fff;
-    width: 50%;
+    width: 25%;
     padding: .5rem;
     border: none;
     border-radius: 5px;
