@@ -1,14 +1,40 @@
- import React from "react";
+ 
+import React, { useState} from "react";
  import './form.css'
 
 export default function Form(){
+    const [Ractor, setRactor] = useState('');
+
+   const ractorName = {
+    'ADIT Boys Hostel Block: A':'mukesh',
+    'ADIT Boys Hostel Block: B':'Dinesh',
+    'ADIT Boys Hostel Block: 5':'Ramesh',
+    'ADIT Boys Hostel Block: 6':'Jignesh',
+    'ADIT Boys Hostel Block: 7':'suresh',
+    'ADIT Boys Hostel Block: 8':'mahesh',
+    'ADIT Boys Hostel Block: 11':'jimesh',
+    'Ayurvedic Hut':'haresh',
+    'Sharda Girls Hostel':'kuntesh'
+
+
+
+   };
+
+    const handleRactorName = (e)=>{
+        const selectedValue = e.target.value;
+        return(
+        setRactor( ractorName[selectedValue])
+        );
+    }
+    
+   
     return(
         <form className="complaint-form">
         <h1>ADIT Hostel Maintainance System</h1>
     <div className="main">
           
         <label>Hostel Block</label>
-        <select>
+        <select onClick={handleRactorName}>
         <option value="select hostel block">select hostel block</option>
            <option value="ADIT Boys Hostel Block: A">ADIT Boys Hostel Block: A</option>
           <option value="ADIT Boys Hostel Block: B">ADIT Boys Hostel Block: B</option>
@@ -22,9 +48,9 @@ export default function Form(){
         </select>
 
         <label>Hostel Ractor</label>
-        <input type="text" disabled></input>
+        <div id="ractor">{Ractor}</div>
 
-        <label>Room number</label>
+        <label>Room number</label> 
         <input type="text" placeholder="Enter hostel room number "></input>
 
         <label >complaint Topic </label>

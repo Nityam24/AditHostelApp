@@ -1,4 +1,4 @@
-
+@import url("https://fonts.googleapis.com/css?family=Dosis:300");
 
    *{
     background-color: #27282D;
@@ -35,6 +35,14 @@
     color: #27282D;
    }
 
+   #ractor{
+    text-align:start;
+    color:  #ccced3;
+    font-weight: 400;
+    height: 1rem;
+    line-height: 1rem;
+   }
+
    .main .radiobutton{
     display: flex;
     gap: .2rem;
@@ -44,7 +52,7 @@
     font-weight:400;
    }
 
-   .main input{
+   .main input, #ractor{
     width: 100%;
     align-self: center;
     border: 1px solid black;
